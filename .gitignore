@@ -1,0 +1,9 @@
+*.css
+*.css.map
+/dist
+/build
+/node_modules
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*

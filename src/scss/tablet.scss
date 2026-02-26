@@ -1,0 +1,340 @@
+@import 'variables';
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-width: 768px;
+  }
+
+  main {
+    background: $main-color;
+  }
+
+  .headers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 24px;
+    box-sizing: border-box;
+
+    button {
+      border: none;
+      background: transparent;
+    }
+  }
+
+  .header__left,
+  .header__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: $background-white;
+    height: 88px;
+  }
+
+  .header__right {
+    padding-right: 3%;
+  }
+
+  .header__divider--hidden {
+    margin: 0 20px;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .header__logo {
+    margin-right: 0;
+  }
+
+  .header__call-icon,
+  .header__chat-icon,
+  .header__menu-repair {
+    margin-right: 16px;
+  }
+
+  .header__profile-icon,
+  .header__divider {
+    margin-right: 20px;
+  }
+
+  .box__img-title {
+    float: left;
+  }
+
+  .box__title-box {
+    padding-top: 24px;
+    margin-bottom: 32px;
+  }
+
+  .box__title-box-title {
+    padding-left: 24px;
+  }
+
+  .menu-repair__hidden,
+  .menu-checkstatus__hidden {
+    display: none;
+  }
+
+  .box__slide-menu {
+    position: relative;
+    padding-left: 24px;
+    height: 40px;
+    overflow: hidden;
+    margin-bottom: 32px;
+  }
+
+  .slide-menu__fade {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 40px;
+    pointer-events: none;
+  }
+
+  ul {
+    display: flex;
+    white-space: nowrap;
+    padding: 0;
+    list-style-type: none;
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+
+  .scroll__element {
+    width: 100%;
+    height: 40px;
+    padding: 8px 9.3px 8px 16.54px;
+    border-radius: 6px;
+    border-width: 2px;
+    margin-right: 10px;
+
+    > a {
+      color: $text-secondary;
+      font-family: 'TT Lakes';
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+    }
+  }
+
+  li:nth-child(1) {
+    border: 2px solid $border-ocean;
+    background: $background-white;
+  }
+
+  .box__about-company {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 720px;
+    padding-left: 24px;
+    padding-bottom: 40px;
+    gap: 48px;
+  }
+
+  .box__about-company_content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 490px;
+  }
+
+  .about-company__text {
+    width: 100%;
+    height: 160px;
+    margin: 0;
+    overflow: hidden;
+    font-family: TT Lakes;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    float: none;
+
+    &.text--open {
+      height: auto;
+      overflow: visible;
+    }
+  }
+
+  .about-company__read-more {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    float: none;
+    align-self: flex-start;
+  }
+
+  .box__about-company-img {
+    width: 360px;
+    height: 208px;
+    object-fit: cover;
+    border-radius: 6px;
+    float: none;
+    flex-shrink: 0;
+  }
+
+  .heading {
+    min-width: 768px;
+    height: 56px;
+  }
+
+  .block-with-links {
+    &.swiper {
+      min-width: 768px;
+    }
+
+    &_heading {
+      padding: 16px 24px;
+      width: 100%;
+    }
+
+    &_container {
+      width: 224px !important;
+      height: 72px !important;
+
+      &.swiper-slide {
+        &.hidden-content {
+          &.card--tech {
+            width: 224px !important;
+            height: 160px !important;
+          }
+        }
+      }
+    }
+
+    &_hide_show_button,
+    .button--swiper--two {
+      padding-bottom: 32px;
+    }
+
+    &_hide_show_button__hide_button {
+      display: none !important;
+    }
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 24px;
+    gap: 24px;
+    padding-top: 24px;
+  }
+
+  .hidden-content:nth-child(n + 7) {
+    display: none !important;
+  }
+
+  .hideTwo:nth-child(n + 4) {
+    display: none !important;
+  }
+
+  .card--tech .block-with-links_container_button {
+    bottom: 16px;
+    top: auto;
+    transform: none;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .hide {
+    display: none !important;
+  }
+
+  .modal {
+    position: relative !important;
+    overflow: visible !important;
+  }
+
+  .modal__close {
+    position: absolute !important;
+    left: -70px !important;
+  }
+
+  .prices-table {
+    background: $main-color;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 16px 24px;
+
+    &__head {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 120px;
+      background: $main-color;
+      color: $text-secondary;
+      font-size: 14px;
+      font-weight: 400;
+      padding: 16px 24px;
+    }
+
+    &__row {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 120px;
+      padding: 16px 24px;
+      position: relative;
+      background: $background-white;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 24px;
+        right: 24px;
+        height: 1px;
+        background: $border-light;
+      }
+    }
+
+    &__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 140px;
+      height: 32px;
+      background: $primary-color;
+      border: none;
+      border-radius: 16px;
+      color: $background-white;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      img {
+        width: 16px;
+        height: auto;
+      }
+    }
+  }
+
+  .block-with-links--prices.swiper {
+    display: none;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    background: $main-color;
+  }
+}
